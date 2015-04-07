@@ -143,6 +143,13 @@ body {
   box-sizing: border-box; }
 
 /* --------------------------------------------------------------------------- planets index */
+
+#apollo {
+  z-index: 12; }
+
+#ceres {
+  z-index: 11; }
+
 #mercury {
   z-index: 10; }
 
@@ -319,32 +326,60 @@ body {
 #mercury .pos,
 #mercury .planet,
 #mercury.orbit {
-  animation-duration: 2.89016s; }
+  animation-duration: 2.4s; }
 
 #venus .pos,
 #venus .planet,
 #venus.orbit {
-  animation-duration: 7.38237s; }
+  animation-duration: 6.15s; }
 
 #earth .pos,
 #earth .planet,
 #earth.orbit {
-  animation-duration: 12.00021s; }
+  animation-duration: 10s; }
 
 #earth .orbit .pos,
 #earth .orbit {
-  animation-duration: 0.89764s; }
+  animation-duration: 0.748s; }
 
 #mars .pos,
 #mars .planet,
 #mars.orbit {
-  animation-duration: 22.57017s; }
+  animation-duration: 18.81s; }
 
 #jupiter .pos,
 #jupiter .planet,
 #jupiter.orbit {
-  animation-duration: 142.35138s; }
+  animation-duration: 118.6s; }
 
+#ceres .pos,
+#ceres .planet,
+#ceres.orbit {
+  animation-duration: 46s; }
+
+#vesta .pos,
+#vesta .planet,
+#vesta.orbit {
+  animation-duration: 36.29s; }
+
+#apophis .pos,
+#apophis .planet,
+#apophis.orbit {
+  animation-duration: 8.86s; }
+
+#ceres .pos,
+#ceres .planet,
+#ceres.orbit {
+  animation-duration: 46s; }
+
+#ceres .pos,
+#ceres .planet,
+#ceres.orbit {
+  animation-duration: 46s; }
+
+
+
+/*
 #saturn .pos,
 #saturn .planet,
 #saturn.orbit,
@@ -360,11 +395,11 @@ body {
 #neptune .planet,
 #neptune.orbit {
   animation-duration: 1977.49584s; }
-
+*/
 /* --------------------------------------------------------------------------- planets sizes */
 /* --------------------------------------------------------------------------- stretched sizes */
 .scale-stretched #sun {
-  font-size: 24em; }
+  font-size: 14em; }
 
 .scale-stretched #mercury .planet {
   font-size: 1.5em; }
@@ -380,6 +415,9 @@ body {
 
 .scale-stretched #mars .planet {
   font-size: 2.9em; }
+
+.scale-stretched #ceres .planet {
+  font-size: 1em; }
 
 .scale-stretched #jupiter .planet {
   font-size: 12em; }
@@ -417,6 +455,9 @@ body {
 .scale-d #mars .planet {
   font-size: 0.20334em; }
 
+.scale-d #ceres .planet {
+  font-size: 0.04334em; }
+
 .scale-d #jupiter .planet {
   font-size: 4.19466em; }
 
@@ -448,6 +489,9 @@ body {
 .scale-s #mars .planet {
   font-size: 2.0334em; }
 
+.scale-s #ceres .moon {
+  font-size: 0.4226em; }
+
 .scale-s #jupiter .planet {
   font-size: 41.9466em; }
 
@@ -460,24 +504,121 @@ body {
 .scale-s #neptune .planet {
   font-size: 14.7732em; }
 
-/* --------------------------------------------------------------------------- stretched orbits */
+/* --------------------------------------------------------------------------- stretched orbits
+Mercury: 0.39 AU
+Venus: 0.72 AU
+Mars: 1.5 AU
+Jupiter: 5.2 AU
+Saturn: 9.6 AU
+Uranus: 19.2 AU
+Neptune: 30.1 AU
+Pluto: 39.5 AU
+Eris: 67.7 AU
+Oort Cloud: 50,000 AU
+Alpha Centauri: 275,000 AU
+
+
+Ceres: 2.767
+Pallas: 2.774
+Juno: 2.669
+Vesta: 2.362
+Eugenia: 2.721
+Siwa: 2.734
+Ida: 2.861
+Eros: 1.458
+Gaspra: 2.209
+Apollo: 1.471
+Chiron: 13.633
+
+ */
+
+/* Asteroids */
+
+.scale-stretched #ceres.orbit {
+  width: 138.35em;
+  height: 138.35em;
+  margin-top: -69.175em;
+  margin-left: -69.175em; }
+
+.scale-stretched #pallas.orbit {
+  width: 138.7em;
+  height: 138.7em;
+  margin-top: -69.35em;
+  margin-left: -69.35em; }
+
+.scale-stretched #juno.orbit {
+  width: 133.45em;
+  height: 133.45em;
+  margin-top: -66.725em;
+  margin-left: -66.725em; }
+
+.scale-stretched #vesta.orbit {
+  width: 118.1em;
+  height: 118.1em;
+  margin-top: -59.05em;
+  margin-left: -59.05em; }
+
+.scale-stretched #eugenia.orbit {
+  width: 136.05em;
+  height: 136.05em;
+  margin-top: -68.025em;
+  margin-left: -68.025em; }
+
+.scale-stretched #siwa.orbit {
+  width: 136.7em;
+  height: 136.7em;
+  margin-top: -68.35em;
+  margin-left: -68.35em; }
+
+.scale-stretched #ida.orbit {
+  width: 143.05em;
+  height: 143.05em;
+  margin-top: -71.525em;
+  margin-left: -71.525em; }
+
+.scale-stretched #eros.orbit {
+  width: 72.9em;
+  height: 72.9em;
+  margin-top: -36.45em;
+  margin-left: -36.45em; }
+
+.scale-stretched #gaspra.orbit {
+  width: 110.45em;
+  height: 110.45em;
+  margin-top: -55.225em;
+  margin-left: -55.225em; }
+
+.scale-stretched #apollo.orbit {
+  width: 73.55em;
+  height: 73.55em;
+  margin-top: -36.775em;
+  margin-left: -36.775em; }
+
+.scale-stretched #chiron.orbit {
+  width: 681.65em;
+  height: 681.65em;
+  margin-top: -340.825em;
+  margin-left: -340.825em; }
+
+/* Planets */
+
 .scale-stretched #mercury.orbit {
-  width: 32em;
-  height: 32em;
-  margin-top: -16em;
-  margin-left: -16em; }
+  width: 19.5em;
+  height: 19.5em;
+  margin-top: -9.75em;
+  margin-left: -9.75em; }
 
 .scale-stretched #venus.orbit {
-  width: 40em;
-  height: 40em;
-  margin-top: -20em;
-  margin-left: -20em; }
+  width: 36em;
+  height: 36em;
+  margin-top: -18em;
+  margin-left: -18em; }
 
 .scale-stretched #earth.orbit {
-  width: 56em;
-  height: 56em;
-  margin-top: -28em;
-  margin-left: -28em; }
+  width: 50em;
+  height: 50em;
+  margin-top: -25em;
+  margin-left: -25em; }
 
 .scale-stretched #earth .orbit {
   width: 6em;
@@ -486,17 +627,17 @@ body {
   margin-left: -3em; }
 
 .scale-stretched #mars.orbit {
-  width: 72em;
-  height: 72em;
-  margin-top: -36em;
-  margin-left: -36em; }
+  width: 75em;
+  height: 75em;
+  margin-top: -37.5em;
+  margin-left: -37.5em; }
 
 .scale-stretched #jupiter.orbit {
-  width: 100em;
-  height: 100em;
-  margin-top: -50em;
-  margin-left: -50em; }
-
+  width: 260.1975535em;
+  height: 260.1975535em;
+  margin-top: -130.09877675em;
+  margin-left: -130.09877675em; }
+/*
 .scale-stretched #saturn.orbit {
   width: 150em;
   height: 150em;
@@ -514,7 +655,7 @@ body {
   height: 210em;
   margin-top: -105em;
   margin-left: -105em; }
-
+*/
 /* --------------------------------------------------------------------------- scaled orbits */
 /* --------------------------------------------------------------------------- distance scale orbits */
 .scale-d #mercury.orbit {
@@ -647,6 +788,9 @@ body {
 
 .set-speed #mars dl.infos dd:after {
   content: '86,677 km/h'; }
+
+.set-speed #ceres dl.infos dd:after {
+  content: '64,458 km/h'; }
 
 .set-speed #jupiter dl.infos dd:after {
   content: '47,002 km/h'; }
@@ -964,7 +1108,7 @@ body {
 
 #saturn .ring           { animation-name:     shadow-saturn-ring; }
 
-@keyframes 
+@keyframes
 shadow-saturn-ring{ 0%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50, 0.45); opacity: .4; }
                   25%    { box-shadow: inset -5px   -30px   12px  rgba(20, 40, 50, 0.3);  opacity: 1; }
                   25.01% { box-shadow: inset 5px    -30px   12px  rgba(20, 40, 50, 0.3);  opacity: 1; }
@@ -1053,9 +1197,9 @@ shadow-saturn-ring{ 0%   { box-shadow: inset -16px  0      4px   rgba(20, 40, 50
   box-shadow: inset -12px 0 5px rgba(0, 0, 0, 0.5);
   /* RIGHT */ }
 
-/* --------------------------------------------------------------------------- DEBUG 
-.pos, 
-.planet, 
+/* --------------------------------------------------------------------------- DEBUG
+.pos,
+.planet,
 .orbit,
 .ring { animation-duration: 20s!important; }
 
